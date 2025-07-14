@@ -3,53 +3,71 @@ import "./App.css";
 import "./utils.css";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import CountryCard from "./components/CountryCard";
+import CountriesList from "./components/CountriesList";
 
 function App() {
-  const [moeda, setMoeda] = useState("eur");
-  const [paises, setPaises] = useState([]);
+  // Exemplos de use effect
+  // const [currentName, setCurrentname] = useState("N/A");
+  // const [age, setAge] = useState(18);
 
-  console.log("paises", paises);
-  useEffect(() => {
-    console.log("dependencias vazias");
+  // useEffect(() => {
+  //   console.log("useEffect Magali, executa 1 vez apenas");
+  // }, []);
 
-    //  recolher dados na API
-    const fetchData = async () => {
-      const data = await fetch(`https://restcountries.com/v3.1/currency/${moeda}`);
-      const countries = await data.json();
+  // useEffect(() => {
+  //   console.log("useEffect com dependencia. Name:" + currentName + "Age:" + age);
+  // }, [currentName, age]);
 
-      setPaises(countries);
-    };
+  // useEffect(() => {
+  //   console.log("sem dependencia nenhuma o CHATO!!!");
+  // });
 
-    fetchData();
+  // Fim de exemplos use effect
 
-    // guardar o que vem da a API
-  }, [moeda]);
+  // console.log("countries", countries);
+  // useEffect(() => {
+  //   console.log("dependencias vazias");
+
+  //   //  recolher dados na API
+  //   const fetchData = async () => {
+  //     const data = await fetch(`https://restcountries.com/v3.1/currency/${currency}`);
+  //     const countries = await data.json();
+
+  //     setCountries(countries);
+  //   };
+
+  //   fetchData();
+
+  //   // guardar o que vem da a API
+  // }, [currency]);
 
   return (
     <>
-      <h1>bye bye {moeda}!</h1>
+      <CountriesList />
+      {/* <h1>bye bye {currency}!</h1>
       <Button
         label={"eur"}
         onClick={() => {
-          setMoeda("eur");
+          setCurrency("eur");
         }}
       />
 
       <Button
         label={"usd"}
         onClick={() => {
-          setMoeda("usd");
+          setCurrency("usd");
         }}
       />
       <Button
         label={"cop"}
         onClick={() => {
-          setMoeda("cop");
+          setCurrency("cop");
         }}
-      />
+      /> */}
 
-      <div className="grid grid-4">
-        {paises.map((pais) => {
+      {/* <div className="grid grid-4">
+        {countries.map((pais) => {
           return (
             <Card  key={pais.cca3}>
               <img src={pais.flags?.png} alt="" />
@@ -57,7 +75,33 @@ function App() {
             </Card>
           );
         })}
+
+       
+      </div> */}
+
+      {/* <div>
+        <label htmlFor="">Name:</label>
+        <input
+          type="text"
+          onChange={(event) => {
+            const newName = event.target.value;
+            setCurrentname(newName);
+          }}
+        />
+
+        <label htmlFor="">Age:</label>
+        <input
+          type="text"
+          onChange={(event) => {
+            const newAge = event.target.valueAsNumber;
+            setAge(newAge);
+          }}
+        />
       </div>
+
+      <div>
+        <CountryCard flagSrc="https://flagcdn.com/w320/pt.png" capitalCity={"Lisbon"} country={"Portugal"} />
+      </div> */}
     </>
   );
 }
