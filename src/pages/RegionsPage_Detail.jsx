@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
-import CountryCard from "./CountryCard";
+import CountryCard from "../components/CountryCard";
+import Header from "../components/Header";
 
 // o useparams serve para acessar os parâmetros da URL, como o nome do país que foi passado na rota. Ele retorna um objeto com os parâmetros da URL, onde cada chave é o nome do parâmetro definido na rota e o valor é o valor correspondente na URL.
 
@@ -29,10 +30,9 @@ function RegionPage_Detail() {
 
   return (
     <div>
-      <div>
+      <Header className={"header-center"}>
         <h1>Regions of {regionName}</h1>
-        <hr></hr>
-      </div>
+      </Header>
       <div className="grid grid-3">
         {countriesList.map((countryName) => {
           return (
