@@ -34,7 +34,7 @@ function NavBar() {
       <CardUser>
         <img src={userImage} />
         <span>{user}</span>
-        <div className="cardUser__details margin-left-s ">
+        <div className="card_User__details margin-left-s ">
           <span>
             {country} ({currency})
           </span>
