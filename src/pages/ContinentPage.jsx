@@ -1,9 +1,10 @@
+import Header from "../components/Header";
+
 function ContinentPage() {
   return (
-    <div>
+    <Header className={"header-center"}>
       <h1>Continent</h1>
-      <hr></hr>
-    </div>
+    </Header>
   );
 }
 

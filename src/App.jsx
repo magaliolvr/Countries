@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import "./App.css";
-import "./utils.css";
+import "./style/App.scss";
+import "./style/utils.scss";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import CountryCard from "./components/CountryCard";

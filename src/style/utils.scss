@@ -136,3 +136,52 @@
 .border-radius-m {
   border-radius: 16px;
 }
+
+.bg-blue {
+  background-color: rgb(37, 37, 182);
+}
+
+.bg-gray {
+  background-color: rgb(207, 205, 205);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.gap-xs {
+  gap: 4px;
+}
+.gap-s {
+  gap: 8px;
+}
+
+.gap-m {
+  gap: 12px;
+}
+
+.gap-l {
+  gap: 16px;
+}
+
+.gap-xl {
+  gap: 20px;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  top: 20px;
+  border-bottom: solid 1px blueviolet;
+  position: relative;
+  justify-self: center;
+  margin: 40px 0 40px 0;
+}
