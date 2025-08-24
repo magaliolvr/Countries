@@ -1,10 +1,10 @@
-import Header from "../components/Header";
+import TopContent from "../components/TopContent";
 
 function ContinentPage() {
   return (
-    <Header className={"header-center"}>
+    <TopContent className={"header-center"}>
       <h1>Continent</h1>
-    </Header>
+    </TopContent>
   );
 }
 

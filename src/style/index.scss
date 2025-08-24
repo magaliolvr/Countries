@@ -2,6 +2,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  margin: 0;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -25,9 +26,21 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: #c1e3eb;
+  background-image: url(../assets/mundi_no_bg.png);
+}
+
+main {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 60px auto 0 auto;
+  padding: 40px 32px;
+  max-width: 1200px;
 }
 
 h1 {
@@ -65,62 +78,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  text-align: center;
-  transition: transform 0.2s ease;
-  color: black;
-}
-.grid-4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.flag {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 12px;
-}
-
-.border-destructive {
-  border: 1px solid palevioletred;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.grid-4 {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.card {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fdfdfd;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  padding: 16px;
-  text-align: center;
-  transition: transform 0.2s ease;
-  color: black;
 }

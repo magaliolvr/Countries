@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router";
-import Header from "../components/Header";
+import TopContent from "../components/TopContent";
 import { BiBorderAll } from "react-icons/bi";
 import CountryBorders from "../components/CountryBorders";
 // o useparams serve para acessar os parâmetros da URL, como o nome do país que foi passado na rota. Ele retorna um objeto com os parâmetros da URL, onde cada chave é o nome do parâmetro definido na rota e o valor é o valor correspondente na URL.
@@ -39,10 +39,10 @@ function CountryPage() {
       {!hasData && <h1>Loading...</h1>}
       {hasData > 0 && (
         <div>
-          <Header className={"header-center"}>
+          <TopContent className={"header-center"}>
             <h1>Nome do pais : {countryInfo.name.common}</h1>
             <img src={countryInfo.flags.png} alt={countryInfo.name.common + "'s flag"} width={"50px"} />
-          </Header>
+          </TopContent>
           <h1></h1>
           <h1>população : {countryInfo.population}</h1>
           <h1>capital : {countryInfo.capital}</h1>

@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import TopContent from "../components/TopContent";
 import RegionCard from "../components/RegionCard";
 import { Link } from "react-router";
 
@@ -7,9 +7,9 @@ function RegionsPage() {
 
   return (
     <div>
-      <Header className={"header-center"}>
+      <TopContent className={"header-center"}>
         <h1>Estou na pagina Regions</h1>
-      </Header>
+      </TopContent>
 
       <div className="grid">
         {regions.map((name) => {
