@@ -76,17 +76,10 @@ function CountriesList() {
     <div>
       <h1>Contries List</h1>
 
-      {/* OPTION WITH BUTTONS */}
-      {/* <Button label="EURO" onClick={() => setCurrency("eur")} />
-      <Button label="USD" onClick={() => setCurrency("usd")} />
-      <Button label="COP" onClick={() => setCurrency("cop")} /> */}
-
-      {/* OPTIONS WITH DROPDOWN LIST */}
-
       <DropdownList options={codeCurrencies} onChange={(e) => setCurrency(e.target.value)} />
 
       {/* GALLERY CARDS*/}
-      <div className="grid grid-3 ">
+      <div className="flex-wrap gap-xl justify-center">
         {countries.map((country) => {
           return (
             <Link to={`/country/${country.name.common}`} key={country.cca3}>

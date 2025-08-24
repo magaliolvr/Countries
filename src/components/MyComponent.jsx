@@ -1,4 +1,5 @@
 import { useRef } from "react";
+// useRef é um hook do React que permite criar referências mutáveis que persistem por todo o ciclo de vida do componente. è usado para acessar diretamente elementos DOM ou armazenar valores mutáveis que não causam re-renderizações quando alterados. Um exemplo simples seria usar useRef para armazenar uma referência a um input e, em seguida, focar nesse input quando um botão é clicado.
 
 function MyComponent() {
   const meuInputRef = useRef(null);

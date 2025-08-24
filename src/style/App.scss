@@ -1,7 +1,6 @@
 #root {
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 2rem;
+  // margin: 0 auto;
+  width: 100%;
   text-align: center;
 }
 
@@ -31,24 +30,6 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  width: 100%;
-  background: white;
-  padding: 1rem;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-nav a {
-  color: black;
 }
 
 .card {

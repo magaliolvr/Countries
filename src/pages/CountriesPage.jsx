@@ -1,12 +1,14 @@
 import CountriesList from "../components/CountriesList";
-import Header from "../components/Header";
+import TopContent from "../components/TopContent";
 
 function CountriesPage() {
   return (
-    <Header className={"header-center"}>
-      <h1>Countries page</h1>
+    <div>
+      <TopContent className={"header-center"}>
+        <h1>Countries page</h1>
+      </TopContent>
       <CountriesList />
-    </Header>
+    </div>
   );
 }
 

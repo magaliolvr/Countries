@@ -1,12 +1,12 @@
-import Header from "../components/Header";
+import TopContent from "../components/TopContent";
 import MyCompoent from "../components/MyComponent";
 
 function Homepage() {
   return (
     <div>
-      <Header className={"header-center"}>
+      <TopContent className={"header-center"}>
         <h1>Homepage</h1>
-      </Header>
+      </TopContent>
 
       <MyCompoent />
     </div>
