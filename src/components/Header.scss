@@ -18,20 +18,27 @@ header {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-}
 
-header a {
-  color: black;
-}
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
 
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  padding-left: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: flex-end;
+  a {
+    color: black;
+  }
+
+  nav ul.menu-list a span {
+    color: #746f6f;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 600px) {
