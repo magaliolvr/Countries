@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import TopContent from "../components/TopContent";
 import { BiBorderAll } from "react-icons/bi";
 import CountryBorders from "../components/CountryBorders";
+import GlassCard from "../components/GlassCard";
 // o useparams serve para acessar os parâmetros da URL, como o nome do país que foi passado na rota. Ele retorna um objeto com os parâmetros da URL, onde cada chave é o nome do parâmetro definido na rota e o valor é o valor correspondente na URL.
 
 // o useEffect serve, de forma simplificada, para executar código quando o componente é montado ou quando determinadas variáveis mudam. Ele é usado para buscar dados, manipular o DOM, ou realizar outras operações que precisam ser feitas após a renderização do componente.
@@ -39,9 +40,11 @@ function CountryPage() {
       {!hasData && <h1>Loading...</h1>}
       {hasData > 0 && (
         <div>
-          <TopContent className={"header-center"}>
-            <h1>Nome do pais : {countryInfo.name.common}</h1>
-            <img src={countryInfo.flags.png} alt={countryInfo.name.common + "'s flag"} width={"50px"} />
+          <TopContent className={"main-header"}>
+            <GlassCard>
+              <h1>Nome do pais : {countryInfo.name.common}</h1>
+              <img src={countryInfo.flags.png} alt={countryInfo.name.common + "'s flag"} width={"50px"} />
+            </GlassCard>
           </TopContent>
           <h1></h1>
           <h1>população : {countryInfo.population}</h1>

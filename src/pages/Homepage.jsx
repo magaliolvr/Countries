@@ -1,11 +1,14 @@
 import TopContent from "../components/TopContent";
 import MyCompoent from "../components/MyComponent";
+import GlassCard from "../components/GlassCard";
 
 function Homepage() {
   return (
     <div>
-      <TopContent className={"header-center"}>
-        <h1>Homepage</h1>
+      <TopContent className={"main-header"}>
+        <GlassCard>
+          <h1>Homepage</h1>
+        </GlassCard>
       </TopContent>
 
       <MyCompoent />
