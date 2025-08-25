@@ -26,16 +26,16 @@ function Header() {
         )}
         <ul className={`menu-list ${isMenuOpen ? "is-open" : ""}`}>
           <Link to={"./homepage"}>
-            <Button variant="tertiary">Homepage</Button>
+            <span>Homepage</span>
           </Link>
           <Link to={"./countries"}>
-            <Button variant="tertiary">Countries</Button>
+            <span>Countries</span>
           </Link>
           <Link to={"./continent"}>
-            <Button variant="tertiary">Continent</Button>
+            <span>Continent</span>
           </Link>
           <Link to={"./regions"}>
-            <Button variant="tertiary">Regions</Button>
+            <span>Regions</span>
           </Link>
 
           {isMobile && (
