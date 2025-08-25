@@ -1,5 +1,6 @@
 import TopContent from "../components/TopContent";
 import RegionCard from "../components/RegionCard";
+import GlassCard from "../components/GlassCard";
 import { Link } from "react-router";
 
 function RegionsPage() {
@@ -7,8 +8,10 @@ function RegionsPage() {
 
   return (
     <div>
-      <TopContent className={"header-center"}>
-        <h1>Estou na pagina Regions</h1>
+      <TopContent className={"main-header"}>
+        <GlassCard>
+          <h1>Estou na pagina Regions</h1>
+        </GlassCard>
       </TopContent>
 
       <div className="grid">

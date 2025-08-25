@@ -198,12 +198,8 @@
   color: black;
 }
 
-.header-center {
+.main-header {
   display: flex;
-  flex-direction: column;
-  top: 20px;
-  border-bottom: solid 1px blueviolet;
   position: relative;
-  justify-self: center;
-  margin: 40px 0 40px 0;
+  margin-bottom: 40px;
 }

@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import logo from "../assets/dig_atlas_Black.svg";
+import logo from "../assets/logo_dig_atlas_Black.svg";
 import Button from "./Button";
 import "./Header.scss";
 import { Search } from "lucide-react";
@@ -15,8 +15,8 @@ function Header() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
-    <header>
-      <img src={logo} alt="logo" className="navbar_logo" width="100px" />
+    <header className="nav-header">
+      <img src={logo} alt="logo" className="navbar_logo" width="50px" />
 
       <nav>
         {isMobile && (

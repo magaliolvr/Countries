@@ -1,10 +1,15 @@
+import GlassCard from "../components/GlassCard";
 import TopContent from "../components/TopContent";
 
 function ContinentPage() {
   return (
-    <TopContent className={"header-center"}>
-      <h1>Continent</h1>
-    </TopContent>
+    <div>
+      <TopContent className={"main-header"}>
+        <GlassCard>
+          <h1>Continent</h1>
+        </GlassCard>
+      </TopContent>
+    </div>
   );
 }
 
